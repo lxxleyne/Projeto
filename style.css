@@ -70,10 +70,45 @@ nav a:hover{
     transform: translateY(-10px);
     transition: 0.5s;
 }
-
-#filmes{
-
+/*------outro melhores-------*/
+.filmes{
+    color: aliceblue;
+   
+}
+#h2{
+    font-family: 'Transformers', sans-serif;
+    margin:10px;
+    font-size: 35px;
 }
 .card-filmes{
-    background: ;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(15, 14, 65);
+    border-radius: 10px;
 }
+.card h3{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 15px;
+}
+
+.card-filmes img{
+    height: 150px;
+    width: 300px;
+    margin-top: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-filmes:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+footer{
+    background: rgb(24, 26, 139);
+    
+}
+ footer p{
+    color: aliceblue;
+ }

@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+/*-----header------------*/
+header{
+    background-color: rgb(24, 26, 139);
+    color: rgb(233, 229, 229);
+    padding: 20px;
+    font-family: 'Transformers', sans-serif;
+    font-size: 50px;
+}
+
+body{
+    background-color:rgb(25, 25, 133);
+}
+#personagem{
+    background-color: rgb(235, 221, 24);
+    padding: 50px 20px;
+}
+#personagem h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px; /*Espaço externo na parte inferior*/
+}
+.container-personagens{ /*container e uma caixa grande onde dentro tem as caixinhas (personagens/cards/itens)*/
+    display: flex; /*ativa um  do tipo flexbox*/
+    flex-wrap: wrap; /*quebra a linha se não houver espaço suficiente*/
+    gap: 30px; /*espaço entre os cards (itens)*/
+
+    /*Centralizar os cards (as coisas) no eixo principal*/
+    justify-content: center;
+
+    align-items: stretch; /*dexa todos os itens *esticados* ou seja do mesmo tamanho*/
+}
+/*Alterar os estilos dos cards*/
+.item{
+    width: 410px;
+    background-color: rgb(194, 25, 25);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
