@@ -5,18 +5,18 @@
 }
 /*-----header------------*/
 header{
-    background-color: rgb(24, 26, 139);
-    color: rgb(233, 229, 229);
+    background-color: #0047AB ;
+    color: rgb(224, 220, 220);
     padding: 20px;
     font-family: 'Transformers', sans-serif;
     font-size: 50px;
 }
 
 body{
-    background-color:rgb(25, 25, 133);
+    background-color:#003262;
 }
 #personagem{
-    background-color: rgb(235, 221, 24);
+    background-color: rgb(27, 27, 145);
     padding: 50px 20px;
 }
 #personagem h2{
@@ -24,6 +24,7 @@ body{
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px; /*Espaço externo na parte inferior*/
+    font-family: 'Transformers', sans-serif;
 }
 .container-personagens{ /*container e uma caixa grande onde dentro tem as caixinhas (personagens/cards/itens)*/
     display: flex; /*ativa um  do tipo flexbox*/
@@ -38,9 +39,141 @@ body{
 /*Alterar os estilos dos cards*/
 .item{
     width: 410px;
-    background-color: rgb(194, 25, 25);
+    background-color: #BEBFC5;
     border-radius: 10px;
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*muda a direção dos eixos e deixa em coluna*/
+    justify-content: space-between; /*espaçamento entre*/
+    cursor: alias;
+    transition: 0.3s, box shadow 0,3s ;
+}
+
+.item:hover{
+    color: #ffffff;
+    box-shadow: 0 0 20px #7df9ff;
+    background: #b8b8b8;
+    background: radial-gradient(circle, rgba(184, 184, 184, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+
+.item img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;/*prenche do todo o campo*/
+    border-radius: 10px;
+    margin-bottom: 15px; /*dá um espaço entre a img e o texto em baixo*/
+}
+
+/*Alterando o estilo o esilo do paragrafo*/
+.item p{
+    color: rgb(105, 105, 105);
+    font-weight: bold ;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item h3{
+    font-family: 'Transformers', sans-serif;
+    font-size: 23px;
+    margin-bottom: 15px;
+
+}
+
+.tags {
+    flex-wrap: wrap;/*vai quebrar a linha*/
+    gap: 15px;
+}
+
+.tag{
+    color: rgb(255, 254, 254);
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 6px;
+    display: inline-block;
+}
+.protagonista{
+    background-color:  #8d1f1f;
+}
+.Semirreboque{
+    background-color:  #0d43b8;
+}
+
+.carismatico{
+    background-color: #010600;
+}
+.caramelo{
+    background-color: #f3d320;
+}
+
+.Guerreiro{
+    background-color:rgb(56, 3, 3) ;
+}
+.GMC{
+    background-color:rgb(80, 79, 79) ;
+}
+
+.medico{
+    background-color: #636B2F ;
+}
+.ambulancia{
+    background-color:  #636362;
+}
+
+.amante{
+    background-color: #b1afaf;
+    color: #010600;
+}
+.pontiac{
+    background-color: #111810 ;
+    
+}
+
+.rebelde{
+    background-color: #71706E ;
+}
+.caminhao{
+    background-color: #3f3f46 ;
+}
+
+.natureza{
+    background-color: #3a3939
+   
+    
+
+}
+.Lockheed{
+    background-color: #494c4e  ;
+}
+
+.lealdade{
+    background-color:#003366 ;
+}
+.mercedes{
+    background-color: #808080 ;
+    color: black;
+}
+footer{
+    color: rgb(237, 237, 240);
+    font-size: 25px;
+    transition: 0.3s, box shadow 0,3s ;
+}
+footer:hover{
+    color: #ff0000;
+    box-shadow:0 0 20px rgb(25, 0, 255);
+   
+}
+
+/*---------------RESPONSIVO----SE AJUSTAR AO TAMANHO------------*/
+
+@media(max-width:600px){
+    #personagem h2{
+        font-size: 50px;
+    }
+
+    .item{
+        width:100% ;
+        max-width: 320px;
+    }
 }
